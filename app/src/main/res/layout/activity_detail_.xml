@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEEB"
+    tools:context=".Detail_Activity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/latar"
+        android:elevation="10dp"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/tv_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:hint="Nama Pantai"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+
+            <ImageView
+                android:layout_below="@id/tv_nama"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:id="@+id/img_pasih" />
+
+            <TextView
+                android:id="@+id/tv_alamat"
+                android:layout_below="@id/img_pasih"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/lokasi"
+                android:ems="10"
+                android:paddingBottom="5dp"
+                android:hint="Alamat" />
+
+            <TextView
+                android:id="@+id/tv_ket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_alamat"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/description"
+                android:ems="10"
+                android:paddingBottom="5dp"
+                android:hint="Keterangan"
+
+ />
+            <TextView
+                android:id="@+id/tv_lati"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ket"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/pinlokasi"
+                android:ems="10"
+                android:paddingBottom="5dp"
+                android:hint="Latitude"
+  />
+
+            <TextView
+                android:id="@+id/tv_long"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_lati"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/pinlokasi"
+                android:ems="10"
+                android:hint="Longitude"
+                android:paddingBottom="5dp"
+    />
+
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/tv_long"
+                android:layout_marginTop="20dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <ImageView
+                android:id="@+id/img_call"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/tv_long"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/img_back"
+                android:paddingTop="15dp"
+                android:src="@drawable/ic_call_black_24dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

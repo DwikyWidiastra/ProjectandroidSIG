@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#87CEEB"
+    android:layout_height="match_parent"
+    tools:context=".utama_activity">
+
+
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/v_fliper"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_below="@id/v_fliper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/latar"
+        android:elevation="10dp"
+        android:padding="20dp">
+
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Sistem Informasi Geografis"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_below="@id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="D'Pasih"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        <ImageView
+            android:paddingTop="15dp"
+            android:layout_below="@id/textView2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/maps"
+            android:id="@+id/iv_maps"
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_list"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/textView2"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/iv_maps"
+            android:paddingTop="15dp"
+            android:src="@drawable/list" />
+
+    </RelativeLayout>
+</RelativeLayout>
